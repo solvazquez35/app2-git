@@ -1,0 +1,342 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Segunda aplicacion</title>
+
+ <!--grupo CSS-->
+ <link rel="stylesheet" href="css/tema-app1.min.css"/>
+ <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+ <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+ <!--grupo JavaScript-->
+ <script src="js/jquery-1.11.2.min.js"></script>
+ <script src="js/jquery.mobile-1.4.5.min.js"></script>
+ <script src="js/acciones.js"></script>
+ <script src="phonegap.js"></script>
+ <script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+ </script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/celular4.jpg','imagenes/celular6.jpg','imagenes/celular8.jpg','imagenes/celular2.jpg')">
+
+ <div data-role="page" id="Principal" data-theme="b">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+   <h1>Telefonia celular en Mexico</h1>
+   </div>
+   <div data-role="main" class="ui-content">
+    <div data-role="collapsible" data-content-theme="false">
+     <h1>Telefono celular</h1>
+      <div>
+       <p>Imagen del celular</p>
+       <br>
+      </div>
+      <div>
+      <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image17','','imagenes/celular2.jpg',1)"><img src="imagenes/celular1.jpg" width="20%" height="20%" id="Image17"></a>
+       </div>
+      </div>
+      </div>
+      
+      <div>
+       <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+       <li class="ui-first-child ui-last-child">
+         <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+           <h2> Definicion de telefono </h2>
+           <p>Se muestra la definicion del telefono celular</p>
+           </a>
+           </li>
+           <li class="ui-first-child ui-last-child">
+            <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+             <h2>Historia del telefono celular</h2>
+             <p>Se muestra las historia</p>
+             </a>
+            </li>
+            <li class="ui-first-child ui-last-child">
+             <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+              <h2> Clasificacion de celulares</h2>
+              <p>Se muestra las gamas </p>
+              </a>
+             </li>
+             <li class="ui-first-child ui-last-child">
+               <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                <h2>Compañias</h2>
+                <p>Muestra las compañias que ofrecen un cervicio </p>
+                </a>
+              </li>
+              <li class="ui-first-child ui-last-child">
+                <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                 <h2>Telefonos del futuro</h2>
+                 <p>Muestra telefonos que existiran</p>
+                 </a>
+              </li>
+              </ul>
+             </div>
+             <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+              <div>
+                <img src="imagenes/logo.png" width="5%" height="5%">
+               </div>
+               <div>
+                 <h4>Aplicacion dos</h4>
+                 <h4>Vazquez Rangel Maria del Sol</h4>
+               </div>
+               </div>
+               </div>
+               
+              <div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="b">
+                 <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+                <h1>DEFINICION</h1>
+              </div>
+              <p text align="center">Se conoce como celular al dispositivo inalámbrico electrónico que está preparado para tener acceso a la telefonía celular, también conocida como móvil.En tanto, la denominación celular tiene su razón de ser en que cada una de las antenas repetidoras, que forman parte de la red, son células.El rasgo diferencial que ostenta el teléfono celular por sobre los otros tipos de teléfono es su fácil portación, en la cartera, en el bolso, incluso en los bolsillos del pantalón o pollera, los seres humanos que formamos parte de esta comunidad conectada celularmente podemos llevar con nosotros y a cualquier lado este tipo de teléfono porque no pesan casi nada.</p> 
+              <div data-role="content" align="center">
+              <div data-role="collapsible" data-content-theme="false">
+              <h1> CELULAR 1 </h1>
+              <div>
+              <br>
+              </div>
+              <div>
+               <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image5','','imagenes/celular4.jpg',1)"><img src="imagenes/celular3.png" width="20%" height="20%" id="Image5"></a>
+               </div>
+               </div>
+               
+               <div data-role="collapsible" data-content-theme="false">
+              <h1> CELULAR 2 </h1>
+              <div>
+              <br>
+              </div>
+              <div>
+                <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image6','','imagenes/celular6.jpg',1)"><img src="imagenes/celular5.jpg" width="20%" height="20%" id="Image6"></a>
+              </div>
+              </div>
+                
+<div data-role="footer" data-theme="b" data-position="fixed">
+          <h4>Aplicacion APP2,VRMS</h4>
+              </div>
+             </div>
+            </div>
+            </div>
+            
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="b">
+             <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+               <h1>Historia del telefono</h1>
+             </div>
+              <h2>El 3 de abril de 1973, Martín Cooper directivo de Motorola realizó la primera llamada desde un teléfono móvil del proyecto DynaTAC 8000X desde una calle de Nueva York. precisamente a su mayor rival en el sector de telefonía: Joel Engel, de los Bell Labs de AT&T 
+              </h2>
+             <div data-role="content" align="center">
+             <div data-role="collapsible" data-content-theme="false">
+              <h1> CELULAR 1 </h1>
+              <div>
+              <br>
+              </div>
+              <div>
+               <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image8','','imagenes/celular8.jpg',1)"><img src="imagenes/celular7.jpg" width="20%" height="20%" id="Image8"></a> </div>
+              </div>
+              </div>
+               
+               <div data-role="collapsible" data-content-theme="false">
+              <h1> CELULAR 2 </h1>
+              <div>
+              <br>
+              </div>
+              <div>
+                <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image9','','imagenes/celular10.jpg',0)"><img src="imagenes/CELULAR9.jpg" width="20%" height="20%" id="Image9"></a> </div>
+              </div>
+             
+              <div data-role="footer" data-theme="b" data-position="fixed">
+Aplicacion APP2,VRMS</h4>
+              </div>
+             </div>
+            </div>
+            </div>
+            
+            <div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="b">
+            <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+              <h1>CLASIFICACION DE LOS TELEFONOS CELULARES</h1>
+             </div>
+             <div data-role="content" align="center">
+              <div data-role="collapsible" data-content-theme="false">
+              <h1> GAMA BAJA </h1>
+              <div>
+              <br>
+              </div>
+              <div>
+                <p> En está categoría entran desde marcas chinas, imitaciones de gama media o alta hasta terminales obsoletos con muy pocas excepciones </p>
+                <img src="imagenes/gbaja.jpg" width="20%" height="20%"> 
+               </div>
+               </div>
+               <div data-role="collapsible" data-content-theme="false">
+              <h1> GAMA MEDIA </h1>
+              <div>
+              <br>
+              </div>
+              <div>
+                <p> Aquí se ubican los SmartPhones algunos dispositivos de marcas asiáticas, dispositivos devaluados por el tiempo que tienen en el mercado (puede ser engañoso) y las propuestas conservadoras en especificaciones de marcas reconocidas que pueden hacer mucho pero no tanto. </p>
+                <img src="imagenes/gmedia.jpg" width="20%" height="20%">
+              </div>
+              </div>
+              
+              <div data-role="collapsible" data-content-theme="false">
+              <h1> GAMA ALTA </h1>
+              <div>
+              <br>
+              </div>
+              <div>
+                <p>Aquí se ubican los mejores,se distinguen por sus exquisitas especificaciones pero no necesariamente representan una mejor experiencia al usarlos si no se elige con cuidado.Los mejores avances tecnológicos pueden aparecer en está gama para luego ser heredados con el tiempo a la gama media en menor medida. </p>
+                <img src="imagenes/galta.png" width="20%" height="20%"> 
+              </div>
+              </div>
+              <div data-role="footer" data-theme="b" data-position="fixed">
+               <h4>Aplicacion APP2,VRMS</h4>
+              </div>
+             </div>
+            </div>
+            
+             <div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="b">
+             <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+             
+             <h1>COMPAÑIAS</h1>
+             </div>
+             <div data-role="content" align="center">
+              <div data-role="collapsible" data-content-theme="false">
+              <h1> TELCEL </h1>
+              <div>
+              <br>
+              </div>
+              <div>
+              <a href="http://telcel.com" target="_self"> <img src="imagenes/telcel.jpg" width="30%" height="30%"> </a>
+                 </div>
+              </div>
+
+               <div data-role="collapsible" data-content-theme="false">
+              <h1> MOVISTAR </h1>
+              <div>
+              <br>
+              </div>
+              
+              <div>
+                 <a href="http://www.movistar.com.mx/" target="_self"><img src="imagenes/movistar.png" width="30%" height="30%"> </a>
+              </div>
+              </div>
+              
+               <div data-role="collapsible" data-content-theme="false">
+              <h1> UNEFON </h1>
+              <div>
+              <br>
+              </div>
+              
+              <div>
+                <a href="https://www.unefon.com.mx/"><img src="imagenes/unefon.png" width="50%" height="50%"> </a> 
+              </div>
+              </div>
+              
+              <div data-role="collapsible" data-content-theme="false">
+              <h1> AT&T </h1>
+              <div>
+              <br>
+              </div>
+              <div>
+                
+               <a href="https://www.att.com.mx/"><img src="imagenes/at&t.png" width="50%" height="50%"></a> 
+              </div>
+              </div>
+              
+              <div data-role="footer" data-theme="b" data-position="fixed">
+               <h4>Aplicacion APP2,VRMS</h4>
+              </div>
+             </div>
+            </div>
+            </div>
+            
+             <div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="b">
+             <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+             <h1> TELEFONOS DEL FUTURO </h1>
+             </div>
+             <div data-role="content" align="center">
+             <div data-role="collapsible" data-content-theme="false">
+              <h1>NEC TAG </h1>
+              <div>
+              <br>
+              </div>
+              <div>
+               <p>Un móvil maleable presentado por NEC Design. Al igual que los modelos antes mencionados éste adopta diferentes formas, según el uso que le quieras dar.
+ 
+Está hecho de un material con memoria, que posee varios sensores de presión para que el teléfono cambie y adopte las distintas posiciones. </p>
+              </div>
+              <div>
+                <img src="imagenes/futuro1.jpg" width="50%" height="50%"> 
+               </div>
+               </div>
+               <div data-role="collapsible" data-content-theme="false">
+              <h1>NOKIA 888 </h1>
+              <div>
+              <br>
+              </div>
+              <div>
+               <p>Está diseñado para otorgar la máxima libertad y diversión, ya que puede cambiar de forma según las necesidades del usuario, gracias a su batería líquida. Puedes llevarlo como pulsera, enrollado en el bolsillo o como prefieras. Cuando recibe una llamada adopta la forma de los teléfonos tradicionales.</p>
+              </div>
+              <div>
+                <img src="imagenes/futuro2.jpg" width="50%" height="50%">
+              </div>
+              </div>
+              
+              <div data-role="collapsible" data-content-theme="false">
+              <h1> BLACK BOX </h1>
+              <div>
+              <br>
+              </div>
+              <div>
+               <p> Modelo que pertenece a BenQ-Siemens y que ha sido catalogado de impresionante, porque incorpora tecnología touch, como medio de navegación, tanto en la panatalla como en todo el cuerpo del dispositivo.  </p>
+              </div>
+              <div>
+                <img src="imagenes/futuro3.jpg" width="50%" height="50%"> 
+              </div>
+              </div>
+              
+              <div data-role="collapsible" data-content-theme="false">
+              <h1> ARA </h1>
+              <div>
+              <br>
+              </div>
+              <div>
+              <p>
+              Project Ara es el nombre en clave que recibe el teléfono modular de Google, cuyas partes, incluyendo CPU, cámara, batería, etc. son intercambiables. Este proyecto lleva ya un tiempo en el aire y, si todo va bien, podríamos verlo en acción en otoño y para el año que viene ya en el mercado.
+              </p>
+              </div>
+              <div>
+                <img src="imagenes/futuro4.jpg" width="50%" height="50%"> 
+              </div>
+              </div>
+              <div data-role="footer" data-theme="b" data-position="fixed">
+               <h4>Aplicacion APP2,VRMS</h4>
+              </div>
+             </div>
+            </div>
+              
+            
+            
+         
+               
+                                  
+       
+      
+</body>
+</html>
